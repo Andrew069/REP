@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="КонтрагентНаименование" id="12">
+			<DataPath>Контрагент.Description</DataPath>
+			<TitleFont ref="style:SmallTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<TitleLocation>Top</TitleLocation>
+			<Width>36</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<ContextMenu name="КонтрагентНаименованиеКонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="КонтрагентНаименованиеРасширеннаяПодсказка" id="14"/>
+		</LabelField>
+		<LabelField name="КонтрагентАдрес" id="15">
+			<DataPath>Контрагент.Адрес</DataPath>
+			<TitleFont ref="style:SmallTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<TitleLocation>Top</TitleLocation>
+			<Width>36</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>2</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<TextColor>#000000</TextColor>
+			<ContextMenu name="КонтрагентАдресКонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="КонтрагентАдресРасширеннаяПодсказка" id="17"/>
+		</LabelField>
+		<UsualGroup name="ГруппаКнопкиНиз" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопки (низ)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки низ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКнопкиНизРасширеннаяПодсказка" id="7"/>
+			<ChildItems>
+				<Button name="КомандаНачатьПосещение" id="8">
+					<Type>UsualButton</Type>
+					<Width>30</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>2</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<CommandName>Form.Command.КомандаНачатьПосещение</CommandName>
+					<BorderColor>#000000</BorderColor>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ExtendedTooltip name="КомандаНачатьПосещениеРасширеннаяПодсказка" id="9"/>
+				</Button>
+				<Button name="КомандаОтменить" id="10">
+					<Type>UsualButton</Type>
+					<Width>30</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>2</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<CommandName>Form.Command.КомандаОтменить</CommandName>
+					<BorderColor>#000000</BorderColor>
+					<Font bold="true" kind="AutoFont"/>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вернуться к маршруту</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КомандаОтменитьРасширеннаяПодсказка" id="11"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЦельПосещения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цель посещения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цель посещения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЦельПосещенияРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="ЦельПосещения" id="3">
+					<DataPath>ЦельПосещения</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>3</Height>
+					<MultiLine>true</MultiLine>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="ЦельПосещенияКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ЦельПосещенияРасширеннаяПодсказка" id="5"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЦельПосещения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цель посещения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Контрагент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаНачатьПосещение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать посещение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда начать посещение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаНачатьПосещение</Action>
+		</Command>
+		<Command name="КомандаОтменить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда отменить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОтменить</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Продажи и возвраты</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandSet>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ТаблицаВзаиморасчетов" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Результат</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаВзаиморасчетовКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ТаблицаВзаиморасчетовКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="ТаблицаВзаиморасчетовРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ТаблицаВзаиморасчетовСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ТаблицаВзаиморасчетов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаВзаиморасчетовСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ТаблицаВзаиморасчетовСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаВзаиморасчетовСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ТаблицаВзаиморасчетов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаВзаиморасчетовСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаВзаиморасчетовСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаВзаиморасчетовУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ТаблицаВзаиморасчетов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаВзаиморасчетовУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаВзаиморасчетовУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<ColumnGroup name="ТаблицаВзаиморасчетовГруппаСтрока" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица взаиморасчетов группа строка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица взаиморасчетов группа строка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ТаблицаВзаиморасчетовГруппаСтрокаРасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<InputField name="ТаблицаВзаиморасчетовНоменклатура" id="26">
+							<DataPath>Результат.Номенклатура</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ShowInHeader>false</ShowInHeader>
+							<BorderColor>style:FieldTextColor</BorderColor>
+							<Font ref="style:SmallTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ContextMenu name="ТаблицаВзаиморасчетовНоменклатураКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ТаблицаВзаиморасчетовНоменклатураРасширеннаяПодсказка" id="28"/>
+						</InputField>
+						<ColumnGroup name="ТаблицаВзаиморасчетовГруппаПродажи" id="29">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Таблица взаиморасчетов группа продажи</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Таблица взаиморасчетов группа продажи</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ТаблицаВзаиморасчетовГруппаПродажиРасширеннаяПодсказка" id="30"/>
+							<ChildItems>
+								<InputField name="ТаблицаВзаиморасчетовПродажиВозвраты1" id="31">
+									<DataPath>Результат.ПродажиВозвраты1</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>6</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<BorderColor>style:FieldTextColor</BorderColor>
+									<ContextMenu name="ТаблицаВзаиморасчетовПродажиВозвраты1КонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ТаблицаВзаиморасчетовПродажиВозвраты1РасширеннаяПодсказка" id="33"/>
+								</InputField>
+								<InputField name="ТаблицаВзаиморасчетовПродажиВозвраты2" id="34">
+									<DataPath>Результат.ПродажиВозвраты2</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>6</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<BorderColor>style:FieldTextColor</BorderColor>
+									<ContextMenu name="ТаблицаВзаиморасчетовПродажиВозвраты2КонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ТаблицаВзаиморасчетовПродажиВозвраты2РасширеннаяПодсказка" id="36"/>
+								</InputField>
+								<InputField name="ТаблицаВзаиморасчетовПродажиВозвраты3" id="37">
+									<DataPath>Результат.ПродажиВозвраты3</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>6</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<BorderColor>style:FieldTextColor</BorderColor>
+									<ContextMenu name="ТаблицаВзаиморасчетовПродажиВозвраты3КонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ТаблицаВзаиморасчетовПродажиВозвраты3РасширеннаяПодсказка" id="39"/>
+								</InputField>
+								<InputField name="ТаблицаВзаиморасчетовПродажиВозвраты4" id="40">
+									<DataPath>Результат.ПродажиВозвраты4</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>6</Width>
+									<HorizontalStretch>true</HorizontalStretch>
+									<BorderColor>style:FieldTextColor</BorderColor>
+									<ContextMenu name="ТаблицаВзаиморасчетовПродажиВозвраты4КонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ТаблицаВзаиморасчетовПродажиВозвраты4РасширеннаяПодсказка" id="42"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+		<LabelDecoration name="ДекорацияНетДанных" id="23">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Font bold="true" kind="AutoFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;&lt;Нет данных&gt;&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="ДекорацияНетДанныхКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="ДекорацияНетДанныхРасширеннаяПодсказка" id="25"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ОтчетВзаиморасчеты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Результат" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Номенклатура" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПродажиВозвраты1" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПродажиВозвраты2" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>2</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПродажиВозвраты3" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>3</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПродажиВозвраты4" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>4</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Контрагент" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Parameters>
+		<Parameter name="Контрагент">
+			<Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

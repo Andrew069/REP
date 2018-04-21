@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Button name="ПолнаяЗагрузкаДанных" id="16">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПолнаяЗагрузкаДанных</CommandName>
+			<ExtendedTooltip name="ПолнаяЗагрузкаДанныхРасширеннаяПодсказка" id="17"/>
+		</Button>
+		<Button name="ПеререгистрацияУстройства" id="3">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПеререгистрацияУстройства</CommandName>
+			<ExtendedTooltip name="ПеререгистрацияУстройстваРасширеннаяПодсказка" id="4"/>
+		</Button>
+		<LabelDecoration name="Декорация2" id="13">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все данные в мобильной базе будут удалены!</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="15"/>
+		</LabelDecoration>
+		<Button name="ОчисткаБазыДанных" id="28">
+			<Type>UsualButton</Type>
+			<Visible>false</Visible>
+			<CommandName>Form.Command.ОчисткаБазыДанных</CommandName>
+			<ExtendedTooltip name="ОчисткаБазыДанныхРасширеннаяПодсказка" id="29"/>
+		</Button>
+		<Button name="ПроверитьСоединение" id="1">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПроверитьСоединение</CommandName>
+			<ExtendedTooltip name="ПроверитьСоединениеРасширеннаяПодсказка" id="2"/>
+		</Button>
+		<LabelDecoration name="НадписьИнформацияОСоединении" id="10">
+			<ContextMenu name="НадписьИнформацияОСоединенииКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НадписьИнформацияОСоединенииРасширеннаяПодсказка" id="12"/>
+		</LabelDecoration>
+		<Button name="ПросмотрСтрокиПодключения" id="5">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПросмотрСтрокиПодключения</CommandName>
+			<ExtendedTooltip name="ПросмотрСтрокиПодключенияРасширеннаяПодсказка" id="6"/>
+		</Button>
+		<LabelDecoration name="Декорация1" id="7">
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="9"/>
+		</LabelDecoration>
+		<Button name="СинхронизироватьКоординатыФон" id="32">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СинхронизироватьКоординатыФон</CommandName>
+			<ExtendedTooltip name="СинхронизироватьКоординатыФонРасширеннаяПодсказка" id="33"/>
+		</Button>
+		<Button name="СинхронизироватьКоординаты" id="30">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СинхронизироватьКоординаты</CommandName>
+			<ExtendedTooltip name="СинхронизироватьКоординатыРасширеннаяПодсказка" id="31"/>
+		</Button>
+		<UsualGroup name="ГруппаОбновлениеКонфигурации" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа обновление конфигурации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа обновление конфигурации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОбновлениеКонфигурацииРасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<Button name="ОбновлениеARM" id="22">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОбновлениеARM</CommandName>
+					<ExtendedTooltip name="ОбновлениеARMРасширеннаяПодсказка" id="23"/>
+				</Button>
+				<Button name="ОбновлениеX86" id="24">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОбновлениеX86</CommandName>
+					<ExtendedTooltip name="ОбновлениеX86РасширеннаяПодсказка" id="25"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="ПроверитьСоединение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить соединение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить соединение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьСоединение</Action>
+		</Command>
+		<Command name="ПеререгистрацияУстройства" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перерегистрация устройства</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перерегистрация устройства</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеререгистрацияУстройства</Action>
+		</Command>
+		<Command name="ПросмотрСтрокиПодключения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр строки подключения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр строки подключения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПросмотрСтрокиПодключения</Action>
+		</Command>
+		<Command name="ПолнаяЗагрузкаДанных" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полная загрузка данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полная загрузка данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолнаяЗагрузкаДанных</Action>
+		</Command>
+		<Command name="ОбновлениеARM" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновление ARM</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновление ARM</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновлениеARM</Action>
+		</Command>
+		<Command name="ОбновлениеX86" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновление x86</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновление x86</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновлениеX86</Action>
+		</Command>
+		<Command name="ОбновитьПараметрыПодключения" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить параметры подключения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить параметры подключения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьПараметрыПодключения</Action>
+		</Command>
+		<Command name="ОчисткаБазыДанных" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистка базы данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистка базы данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчисткаБазыДанных</Action>
+		</Command>
+		<Command name="СинхронизироватьКоординаты" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизировать координаты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизировать координаты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СинхронизироватьКоординаты</Action>
+		</Command>
+		<Command name="СделатьОбмен" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать обмен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать обмен</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СделатьОбмен</Action>
+		</Command>
+		<Command name="ОбновитьПриложение" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить приложение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить приложение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьПриложение</Action>
+		</Command>
+		<Command name="СинхронизироватьКоординатыФон" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизировать координаты фон</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизировать координаты фон</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СинхронизироватьКоординатыФон</Action>
+		</Command>
+	</Commands>
+</Form>

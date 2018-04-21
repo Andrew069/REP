@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandsVisibility>
+		<Command name="InformationRegister.ЗамерыОпераций.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="ab53101c-8751-4443-bfd8-d5c1e4b07d60">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ЗамерыОперацийНастройки.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="ab53101c-8751-4443-bfd8-d5c1e4b07d60">false</xr:Value>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+</CommandInterface>
