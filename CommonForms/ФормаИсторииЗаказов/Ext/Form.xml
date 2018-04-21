@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ИсторияЗаказов" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ИсторияЗаказов</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ИсторияЗаказовКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ИсторияЗаказовКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ИсторияЗаказовРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ИсторияЗаказовСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ИсторияЗаказов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ИсторияЗаказовСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ИсторияЗаказовСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ИсторияЗаказовСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ИсторияЗаказов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ИсторияЗаказовСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ИсторияЗаказовСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ИсторияЗаказовУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ИсторияЗаказов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ИсторияЗаказовУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ИсторияЗаказовУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<ColumnGroup name="ГруппаСтрока" id="41">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа строка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа строка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтрокаРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<ColumnGroup name="ГруппаВерх" id="43">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа верх</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа верх</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ГруппаВерхРасширеннаяПодсказка" id="44"/>
+							<ChildItems>
+								<InputField name="ИсторияЗаказовДатаДокумента" id="14">
+									<DataPath>ИсторияЗаказов.ДатаДокумента</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияЗаказовДатаДокументаКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ИсторияЗаказовДатаДокументаРасширеннаяПодсказка" id="16"/>
+								</InputField>
+								<InputField name="ИсторияЗаказовОперация" id="26">
+									<DataPath>ИсторияЗаказов.Операция</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияЗаказовОперацияКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ИсторияЗаказовОперацияРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="ИсторияЗаказовСпособПолучения" id="29">
+									<DataPath>ИсторияЗаказов.СпособПолучения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияЗаказовСпособПолученияКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ИсторияЗаказовСпособПолученияРасширеннаяПодсказка" id="31"/>
+								</InputField>
+								<InputField name="ИсторияЗаказовСуммаЗаказа" id="38">
+									<DataPath>ИсторияЗаказов.СуммаЗаказа</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияЗаказовСуммаЗаказаКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ИсторияЗаказовСуммаЗаказаРасширеннаяПодсказка" id="40"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ГруппаСередина" id="45">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа середина</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа середина</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ГруппаСерединаРасширеннаяПодсказка" id="46"/>
+							<ChildItems>
+								<InputField name="ИсторияЗаказовНомерДокумента" id="23">
+									<DataPath>ИсторияЗаказов.НомерДокумента</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияЗаказовНомерДокументаКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ИсторияЗаказовНомерДокументаРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="ИсторияЗаказовГрузополучатель" id="20">
+									<DataPath>ИсторияЗаказов.Грузополучатель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияЗаказовГрузополучательКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ИсторияЗаказовГрузополучательРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<InputField name="ИсторияЗаказовОтветственный" id="32">
+									<DataPath>ИсторияЗаказов.Ответственный</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияЗаказовОтветственныйКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ИсторияЗаказовОтветственныйРасширеннаяПодсказка" id="34"/>
+								</InputField>
+								<InputField name="ИсторияЗаказовКоличествоSKU" id="35">
+									<DataPath>ИсторияЗаказов.КоличествоSKU</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияЗаказовКоличествоSKUКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ИсторияЗаказовКоличествоSKUРасширеннаяПодсказка" id="37"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ГруппаНиз" id="47">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа низ</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа низ</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ГруппаНизРасширеннаяПодсказка" id="48"/>
+							<ChildItems>
+								<InputField name="ИсторияЗаказовДатаОтгрузки" id="17">
+									<DataPath>ИсторияЗаказов.ДатаОтгрузки</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияЗаказовДатаОтгрузкиКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="ИсторияЗаказовДатаОтгрузкиРасширеннаяПодсказка" id="19"/>
+								</InputField>
+								<InputField name="ИсторияЗаказовГрузополучательКодПоиска" id="49">
+									<DataPath>ИсторияЗаказов.Грузополучатель.КодПоиска</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИсторияЗаказовГрузополучательКодПоискаКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ИсторияЗаказовГрузополучательКодПоискаРасширеннаяПодсказка" id="51"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ИсторияЗаказовГруппа1" id="52">
+					<ExtendedTooltip name="ИсторияЗаказовГруппа1РасширеннаяПодсказка" id="53"/>
+					<ChildItems>
+						<InputField name="ИсторияЗаказовДатаДокумента1" id="54">
+							<DataPath>ИсторияЗаказов.ДатаДокумента</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИсторияЗаказовДатаДокумента1КонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="ИсторияЗаказовДатаДокумента1РасширеннаяПодсказка" id="56"/>
+						</InputField>
+						<InputField name="ИсторияЗаказовНомерДокумента1" id="57">
+							<DataPath>ИсторияЗаказов.НомерДокумента</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИсторияЗаказовНомерДокумента1КонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="ИсторияЗаказовНомерДокумента1РасширеннаяПодсказка" id="59"/>
+						</InputField>
+						<InputField name="ИсторияЗаказовДатаОтгрузки1" id="60">
+							<DataPath>ИсторияЗаказов.ДатаОтгрузки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИсторияЗаказовДатаОтгрузки1КонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="ИсторияЗаказовДатаОтгрузки1РасширеннаяПодсказка" id="62"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ИсторияЗаказовГруппа2" id="63">
+					<ExtendedTooltip name="ИсторияЗаказовГруппа2РасширеннаяПодсказка" id="64"/>
+					<ChildItems>
+						<InputField name="ИсторияЗаказовГрузополучатель1" id="65">
+							<DataPath>ИсторияЗаказов.Грузополучатель</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИсторияЗаказовГрузополучатель1КонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="ИсторияЗаказовГрузополучатель1РасширеннаяПодсказка" id="67"/>
+						</InputField>
+						<InputField name="ИсторияЗаказовГрузополучательКодПоиска1" id="68">
+							<DataPath>ИсторияЗаказов.Грузополучатель.КодПоиска</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИсторияЗаказовГрузополучательКодПоиска1КонтекстноеМеню" id="69"/>
+							<ExtendedTooltip name="ИсторияЗаказовГрузополучательКодПоиска1РасширеннаяПодсказка" id="70"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ИсторияЗаказовГруппа3" id="71">
+					<ExtendedTooltip name="ИсторияЗаказовГруппа3РасширеннаяПодсказка" id="72"/>
+					<ChildItems>
+						<InputField name="ИсторияЗаказовСпособПолучения1" id="73">
+							<DataPath>ИсторияЗаказов.СпособПолучения</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИсторияЗаказовСпособПолучения1КонтекстноеМеню" id="74"/>
+							<ExtendedTooltip name="ИсторияЗаказовСпособПолучения1РасширеннаяПодсказка" id="75"/>
+						</InputField>
+						<InputField name="ИсторияЗаказовОтветственный1" id="76">
+							<DataPath>ИсторияЗаказов.Ответственный</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИсторияЗаказовОтветственный1КонтекстноеМеню" id="77"/>
+							<ExtendedTooltip name="ИсторияЗаказовОтветственный1РасширеннаяПодсказка" id="78"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ИсторияЗаказовГруппа4" id="79">
+					<ExtendedTooltip name="ИсторияЗаказовГруппа4РасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<InputField name="ИсторияЗаказовСуммаЗаказа1" id="81">
+							<DataPath>ИсторияЗаказов.СуммаЗаказа</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сумма документа</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИсторияЗаказовСуммаЗаказа1КонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="ИсторияЗаказовСуммаЗаказа1РасширеннаяПодсказка" id="83"/>
+						</InputField>
+						<InputField name="ИсторияЗаказовКоличествоSKU1" id="84">
+							<DataPath>ИсторияЗаказов.КоличествоSKU</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ИсторияЗаказовКоличествоSKU1КонтекстноеМеню" id="85"/>
+							<ExtendedTooltip name="ИсторияЗаказовКоличествоSKU1РасширеннаяПодсказка" id="86"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ИсторияЗаказов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История заказов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ДатаДокумента" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаОтгрузки" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата отгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Грузополучатель" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Грузополучатель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НомерДокумента" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Операция" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Операция</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СпособПолучения" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Способ получения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.СпособыПолученияЗаказаБалмико</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ответственный" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответственный</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоSKU" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество SKU</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>5</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаЗаказа" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма заказа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Parameters>
+		<Parameter name="ВыводимаяИнформация">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

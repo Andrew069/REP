@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<LabelDecoration name="Декорация1" id="1">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Font height="12" kind="AutoFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тех. поддержка (круглосуточно)</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="3"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация2" id="4">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Font height="12" bold="true" kind="AutoFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тел: 8 (925) 010-57-23</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="6"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация3" id="7">
+			<ContextMenu name="Декорация3КонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="9"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация4" id="10">
+			<Font height="12" kind="AutoFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инструкция по эксплуатации приложения мобильной торговли "Балмико Торг"</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="Декорация4КонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="Click">Декорация4Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация5" id="13">
+			<ContextMenu name="Декорация5КонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="15"/>
+		</LabelDecoration>
+		<LabelDecoration name="Декорация6" id="16">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Font height="12" kind="AutoFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обратная связь</v8:content>
+				</v8:item>
+			</Title>
+			<Hyperlink>true</Hyperlink>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ContextMenu name="Декорация6КонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="18"/>
+			<Events>
+				<Event name="Click">Декорация6Нажатие</Event>
+			</Events>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes/>
+</Form>

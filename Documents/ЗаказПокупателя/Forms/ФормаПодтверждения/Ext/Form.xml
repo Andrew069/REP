@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Подтверждение заказа</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ДекорацияНадписьвсего" id="22">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декорация надписьвсего</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияНадписьвсегоКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ДекорацияНадписьвсегоРасширеннаяПодсказка" id="24"/>
+		</LabelDecoration>
+		<LabelDecoration name="ДекорацияНадписьДата" id="25">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декорация надпись дата</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияНадписьДатаКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ДекорацияНадписьДатаРасширеннаяПодсказка" id="27"/>
+		</LabelDecoration>
+		<InputField name="ВидДокумента" id="1">
+			<DataPath>ВидДокумента</DataPath>
+			<Visible>false</Visible>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ВидДокументаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ВидДокументаРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<UsualGroup name="ГруппаПризнакиЗаказа" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа признаки заказа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа признаки заказа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПризнакиЗаказаРасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<CheckBoxField name="Предзаказ" id="44">
+					<DataPath>Предзаказ</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПредзаказКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПредзаказРасширеннаяПодсказка" id="46"/>
+					<Events>
+						<Event name="OnChange">ПредзаказПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ОтдельнаяНакладная" id="47">
+					<DataPath>ФБ_ОтдельнаяНакладная</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтдельнаяНакладнаяКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ОтдельнаяНакладнаяРасширеннаяПодсказка" id="49"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ДополнениеКАдресуДоставки" id="10">
+			<DataPath>ДополнениеКАдресуДоставки</DataPath>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Введите примечание</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ДополнениеКАдресуДоставкиКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ДополнениеКАдресуДоставкиРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Комментарий" id="34">
+			<DataPath>Комментарий</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<MultiLine>true</MultiLine>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Введите дополнительную информацию</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<UsualGroup name="ГруппаДополительныеПараметры" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа дополительные параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа дополительные параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДополительныеПараметрыРасширеннаяПодсказка" id="38"/>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКоманды" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа команды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа команды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<Button name="КомандаОтменить" id="6">
+					<Type>UsualButton</Type>
+					<Width>15</Width>
+					<CommandName>Form.Command.КомандаОтменить</CommandName>
+					<BorderColor>style:ToolTipTextColor</BorderColor>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОТМЕНИТЬ</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КомандаОтменитьРасширеннаяПодсказка" id="7"/>
+				</Button>
+				<LabelDecoration name="Декорация1" id="39">
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="41"/>
+				</LabelDecoration>
+				<Button name="КомандаПодтвердить" id="8">
+					<Type>UsualButton</Type>
+					<Width>15</Width>
+					<CommandName>Form.Command.КомандаПодтвердить</CommandName>
+					<BorderColor>style:ToolTipTextColor</BorderColor>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПОДТВЕРДИТЬ</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КомандаПодтвердитьРасширеннаяПодсказка" id="9"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ВидДокумента" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыЗаказа</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнениеКАдресуДоставки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доставка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Комментарий" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Предзаказ" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предзаказ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ФБ_ОтдельнаяНакладная" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отдельная накладная</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаОтменить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда отменить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОтменить</Action>
+		</Command>
+		<Command name="КомандаПодтвердить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подтвердить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда подтвердить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПодтвердить</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ДатаДоставки">
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="КоличествоСтрок">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="СуммаДокумента">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="РеквизитыДокумента">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Проведен">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

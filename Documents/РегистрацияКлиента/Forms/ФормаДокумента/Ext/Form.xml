@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНомерДата" id="28">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаНомерДатаРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Наименование" id="7">
+			<DataPath>Объект.Наименование</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+			<EditMode>EnterOnInput</EditMode>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ЮридическийАдрес" id="10">
+			<DataPath>Объект.ЮридическийАдрес</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Юридический адрес</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ЮридическийАдресКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЮридическийАдресРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="АдресДоставки" id="13">
+			<DataPath>Объект.АдресДоставки</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес доставки</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="АдресДоставкиКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="АдресДоставкиРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ИНН" id="16">
+			<DataPath>Объект.ИНН</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ИНН</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ИННКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Комментарий" id="19">
+			<DataPath>Объект.Комментарий</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="СтатусДоговора" id="22">
+			<DataPath>Объект.СтатусДоговора</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<DropListButton>true</DropListButton>
+			<ChoiceButton>true</ChoiceButton>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус договора</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="СтатусДоговораКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="СтатусДоговораРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<LabelField name="Сотрудник" id="30">
+			<DataPath>Объект.Сотрудник</DataPath>
+			<ContextMenu name="СотрудникКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="32"/>
+		</LabelField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.РегистрацияКлиента</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

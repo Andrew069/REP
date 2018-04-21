@@ -1,35 +1,40 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
-	<Configuration uuid="a420f3e1-ad29-4712-a9e1-4e169aa6c661">
+	<Configuration uuid="fa14a544-bcc8-469e-85e3-936fd998c7e6">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>9cd510cd-abfc-11d4-9434-004095e12fc7</xr:ClassId>
-				<xr:ObjectId>96934f55-48a6-48b9-bc53-457650b9d039</xr:ObjectId>
+				<xr:ObjectId>c75c3f47-42a4-4fa7-88f2-9206d596b2f2</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
-				<xr:ObjectId>b3d9b9c7-4455-421b-8241-386e2fac133e</xr:ObjectId>
+				<xr:ObjectId>c4695240-5f47-4ee1-a522-28341ad72d70</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
-				<xr:ObjectId>85c7cdcb-e9b3-4177-83a2-9370cd36c154</xr:ObjectId>
+				<xr:ObjectId>2e204f30-1bbf-4972-88b3-2314c078d208</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9de14907-ec23-4a07-96f0-85521cb6b53b</xr:ClassId>
-				<xr:ObjectId>27c8f200-8916-4a94-8715-e5832303a0ec</xr:ObjectId>
+				<xr:ObjectId>a167b664-5296-439e-a3f0-2c6baa71f01f</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
-				<xr:ObjectId>51a70904-bfba-42b9-8cc3-75eeed9f4def</xr:ObjectId>
+				<xr:ObjectId>418eeea5-9471-4288-8d38-7e34913cf6e2</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
-				<xr:ObjectId>973b44c3-581e-458a-9684-edf5293cbd1e</xr:ObjectId>
+				<xr:ObjectId>5deed869-1ef1-4df9-9118-dc2e0c2f6dda</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>Конфигурация</Name>
-			<Synonym/>
+			<Name>БалмикоАктивныеПродажи</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Балмико - Активные продажи</v8:content>
+				</v8:item>
+			</Synonym>
 			<Comment/>
 			<NamePrefix/>
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
@@ -39,8 +44,8 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
-			<Vendor>BALMIKO</Vendor>
-			<Version>1.1.4</Version>
+			<Vendor>evgeniy.v.bystrov@gmail.com</Vendor>
+			<Version>2.1.08</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -88,15 +93,15 @@
 				</v8:pair>
 				<v8:pair>
 					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Print</v8:Key>
-					<v8:Value xsi:type="xs:boolean">true</v8:Value>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
 				</v8:pair>
 				<v8:pair>
 					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">InAppPurchases</v8:Key>
-					<v8:Value xsi:type="xs:boolean">true</v8:Value>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
 				</v8:pair>
 				<v8:pair>
 					<v8:Key xsi:type="app:RequiredMobileApplicationPermissions">Ads</v8:Key>
-					<v8:Value xsi:type="xs:boolean">true</v8:Value>
+					<v8:Value xsi:type="xs:boolean">false</v8:Value>
 				</v8:pair>
 			</RequiredMobileApplicationPermissions>
 			<MainClientApplicationWindowMode>Normal</MainClientApplicationWindowMode>
@@ -110,15 +115,244 @@
 			<ConfigurationInformationAddress/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
-			<ModalityUseMode>DontUse</ModalityUseMode>
+			<ModalityUseMode>UseWithWarnings</ModalityUseMode>
 			<SynchronousPlatformExtensionAndAddInCallUseMode>Use</SynchronousPlatformExtensionAndAddInCallUseMode>
 			<InterfaceCompatibilityMode>Version8_2</InterfaceCompatibilityMode>
-			<CompatibilityMode>Version8_3_8</CompatibilityMode>
+			<CompatibilityMode>Version8_3_6</CompatibilityMode>
 			<DefaultConstantsForm/>
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<CommonForm>Форма</CommonForm>
+			<Language>Английский</Language>
+			<Subsystem>ЗамерыОпераций</Subsystem>
+			<Subsystem>Продажи</Subsystem>
+			<CommonPicture>КартинкаЗагрузка</CommonPicture>
+			<CommonPicture>КартинкаУспех</CommonPicture>
+			<CommonPicture>КартинкаНеудача</CommonPicture>
+			<CommonPicture>КартинкаПустая</CommonPicture>
+			<CommonPicture>КартинкаСинхронизация</CommonPicture>
+			<CommonPicture>Папка</CommonPicture>
+			<CommonPicture>ПапкаОткрытая</CommonPicture>
+			<SessionParameter>ТекущийПользователь</SessionParameter>
+			<SessionParameter>ЗаписыватьЛоги</SessionParameter>
+			<SessionParameter>ЗамерыОпераций</SessionParameter>
+			<CommonTemplate>ТестоваяКартинка</CommonTemplate>
+			<CommonTemplate>Сервис</CommonTemplate>
+			<CommonTemplate>ИнформацияОбОбновлении</CommonTemplate>
+			<CommonModule>ОбщийМодульСервер</CommonModule>
+			<CommonModule>ОбщийМодульКлиент</CommonModule>
+			<CommonModule>ОсновныеФункции</CommonModule>
+			<CommonModule>ДополнительныеФункции</CommonModule>
+			<CommonModule>ДополнительныеФункцииСервер</CommonModule>
+			<CommonModule>ДополнительныеРеквизитыСервер</CommonModule>
+			<CommonModule>ДополнительныеФункцииКлиент</CommonModule>
+			<CommonModule>СинхронизацияСервер</CommonModule>
+			<CommonModule>ЭмуляцияСервер</CommonModule>
+			<CommonModule>РаботаСЖурналом</CommonModule>
+			<CommonModule>ФоновыеЗаданияКлиент</CommonModule>
+			<CommonModule>ФоновыеЗаданияСервер</CommonModule>
+			<CommonModule>ЗначенияПоУмолчаниюПереопределямый</CommonModule>
+			<CommonModule>Балмико_УправлениеАкциями</CommonModule>
+			<CommonModule>ЗамерыОперацийГлобальный</CommonModule>
+			<CommonModule>ЗамерыОперацийКэшируемый</CommonModule>
+			<CommonModule>ЗамерыОперацийОбщий</CommonModule>
+			<CommonModule>ЗамерыОперацийСервер</CommonModule>
+			<CommonModule>ТестСервер</CommonModule>
+			<CommonModule>ОбщийМодульПовтИсп</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазы</CommonModule>
+			<ExchangePlan>ОС_ОбменСМобильнымиУстройствами</ExchangePlan>
+			<WSReference>СсылкаНаСервис</WSReference>
+			<WSReference>СсылкаНаСервисNew</WSReference>
+			<WSReference>СсылкаНаСервисТест</WSReference>
+			<EventSubscription>УстановкаКодаСправочники</EventSubscription>
+			<EventSubscription>УстановкаНомераДокументы</EventSubscription>
+			<EventSubscription>ОткрытиеФормыОбъекта</EventSubscription>
+			<EventSubscription>СброситьПризнакСписокКлиентовОбновлен</EventSubscription>
+			<EventSubscription>ЗаписьЛогаПриЗаписиСсылочногоТипа</EventSubscription>
+			<EventSubscription>ЗаписьЛогаПриЗаписиРегистра</EventSubscription>
+			<FunctionalOption>ПолныйДоступ</FunctionalOption>
+			<CommonCommand>ПроверкаПараметров</CommonCommand>
+			<CommonCommand>ВсеФункции</CommonCommand>
+			<CommonCommand>УстановитьИЗапуститьСлужбу</CommonCommand>
+			<CommonCommand>Синхронизация</CommonCommand>
+			<CommonCommand>СоздатьКоординаты</CommonCommand>
+			<CommonCommand>СообщитьЗарядИМодель</CommonCommand>
+			<CommonCommand>СообщитьКоординаты</CommonCommand>
+			<CommonCommand>ТехПоддержка</CommonCommand>
+			<Constant>ID</Constant>
+			<Constant>АдресСервера</Constant>
+			<Constant>ВерсияКонфигурации</Constant>
+			<Constant>ИдентификаторУстройства</Constant>
+			<Constant>НаименованиеОрганизации</Constant>
+			<Constant>НастройкиПодключения</Constant>
+			<Constant>ПериодичностьРегистрацииКоординат</Constant>
+			<Constant>СтарыйID</Constant>
+			<Constant>ТекущийПользователь</Constant>
+			<Constant>ЭтоЦентральнаяБаза</Constant>
+			<Constant>ГруппаКонтрагентов_ВсеКонтрагенты</Constant>
+			<Constant>ГруппаКонтрагентов_СвоиКонтрагенты</Constant>
+			<Constant>ГруппаКонтрагентов_КонтрагентыПоМаршруту</Constant>
+			<Constant>ГруппаПродуктов_ЗаказанныеСегодня</Constant>
+			<Constant>ГруппаПродуктов_ВсяПродукция</Constant>
+			<Constant>ДатаПоследнейСинхронизации</Constant>
+			<Constant>ОС_ПериодичностьВводаДокументов</Constant>
+			<Constant>ОС_ПериодичностьАвтообмена</Constant>
+			<Constant>ОС_ЗаписыватьЛоги</Constant>
+			<Constant>ОС_СрокОжиданияВебСервиса</Constant>
+			<Constant>ОС_ВремяНачалаЗаписиАктивностей</Constant>
+			<Constant>ОС_ВремяОкончанияЗаписиАктивностей</Constant>
+			<Constant>СписокКлиентовОбновлен</Constant>
+			<Constant>ОС_АктуальнаяВерсияМП</Constant>
+			<Constant>СостояниеОбменаДанными</Constant>
+			<Constant>ВидКИ_ЮридическийАдрес</Constant>
+			<Constant>ВидКИ_ФактическийАдрес</Constant>
+			<Constant>ВидКИ_Телефон</Constant>
+			<Constant>ДатаПоследнейОчисткиЛогов</Constant>
+			<Constant>ВерсияСлужбы</Constant>
+			<Constant>МодельПланшета</Constant>
+			<Constant>ВерсияДляВыводаОбновления</Constant>
+			<Constant>УчетныеДанныеСотрудника</Constant>
+			<Constant>ОграниченияОчищены</Constant>
+			<Constant>ТипВнеплановогоПосещения</Constant>
+			<Constant>ТипПосещенияТелефонныйЗвонок</Constant>
+			<Constant>ПолныйДоступ</Constant>
+			<Constant>МинимальнаяСуммаЗаказа</Constant>
+			<Constant>ПодключатьсяКТестовойБазе</Constant>
+			<CommonForm>ФормаАвторизации</CommonForm>
+			<CommonForm>РабочийСтол</CommonForm>
+			<CommonForm>ОсновныеНастройкиСистемы</CommonForm>
+			<CommonForm>ФормаНачалоАктивности</CommonForm>
+			<CommonForm>ФормаВыбораДаты</CommonForm>
+			<CommonForm>СервиснаяФорма</CommonForm>
+			<CommonForm>ЗарегистрированныеИзменения</CommonForm>
+			<CommonForm>ФормаВыбораСпискаЗначений</CommonForm>
+			<CommonForm>ФормаДлительнойОперации</CommonForm>
+			<CommonForm>ФормаИнформацииОбОбновлении</CommonForm>
+			<CommonForm>ТехПоддержка</CommonForm>
+			<CommonForm>ФормаHTML</CommonForm>
+			<CommonForm>ФормаИсторииЗаказов</CommonForm>
+			<CommonForm>ФормаАвторизации_архив</CommonForm>
+			<CommonForm>ФормаВводаЦелиПосещения</CommonForm>
+			<CommonForm>ФормаИзображения</CommonForm>
+			<Catalog>ВидыКонтактнойИнформации</Catalog>
+			<Catalog>ВидыПоказателей</Catalog>
+			<Catalog>ГруппыКонтрагентов</Catalog>
+			<Catalog>ГруппыНоменклатуры</Catalog>
+			<Catalog>ДополнительныеРеквизиты</Catalog>
+			<Catalog>Контрагенты</Catalog>
+			<Catalog>Номенклатура</Catalog>
+			<Catalog>ЕдиницыИзмерения</Catalog>
+			<Catalog>Подразделения</Catalog>
+			<Catalog>Пользователи</Catalog>
+			<Catalog>Производители</Catalog>
+			<Catalog>Склады</Catalog>
+			<Catalog>СтатусыПодписанияДоговоров</Catalog>
+			<Catalog>ТипыЦенНоменклатуры</Catalog>
+			<Catalog>ХарактеристикиНоменклатуры</Catalog>
+			<Catalog>ВидыКомментариев</Catalog>
+			<Catalog>ФизическиеЛица</Catalog>
+			<Catalog>Территории</Catalog>
+			<Catalog>ДоговорыКонтрагентов</Catalog>
+			<Catalog>ФБ_Базы</Catalog>
+			<Catalog>ШаблонАнкетыДляТП</Catalog>
+			<Catalog>ВопросыАнкетДляТП</Catalog>
+			<Catalog>КаналыСбыта</Catalog>
+			<Catalog>НоменклатурныеГруппы</Catalog>
+			<Catalog>Проекты</Catalog>
+			<Catalog>СетиБренды</Catalog>
+			<Catalog>ХранилищеДополнительнойИнформации</Catalog>
+			<Catalog>ВидыЗаданийТорговымПредставителям</Catalog>
+			<Catalog>ТипыПосещенийКлиентовТорговымиПредставителями</Catalog>
+			<Catalog>ПричиныВозвратов</Catalog>
+			<Document>ВозвратТоваровОтПокупателя</Document>
+			<Document>ЗаказПокупателя</Document>
+			<Document>Маршрут</Document>
+			<Document>Посещение</Document>
+			<Document>РабочийДень</Document>
+			<Document>Уведомление</Document>
+			<Document>УстановкаГруппКонтрагентов</Document>
+			<Document>УстановкаГруппНоменклатуры</Document>
+			<Document>ЦеныНоменклатуры</Document>
+			<Document>РегистрацияКлиента</Document>
+			<Document>ВнеплановоеДействие</Document>
+			<Document>ФиксацияПоложения</Document>
+			<Document>Комментарий</Document>
+			<Document>ИзменениеПрофиляТорговойТочки</Document>
+			<Document>МониторингЦен</Document>
+			<Document>УсловияПоставокПоДоговорамКонтрагентов</Document>
+			<Document>УстановкаСоответствияТорговыхПредставителейТерриториям</Document>
+			<Document>АнкетаТП</Document>
+			<Document>УчастникиТрейдМаркетинговыхАкций</Document>
+			<Document>ТрейдМаркетинговаяАкция</Document>
+			<Document>Допродажи</Document>
+			<Document>СнятиеОстатков</Document>
+			<DocumentJournal>ЗаказыИВозвраты</DocumentJournal>
+			<Enum>ДниНедели</Enum>
+			<Enum>СтавкиНДС</Enum>
+			<Enum>НаправлениеОбмена</Enum>
+			<Enum>ВидыПосещений</Enum>
+			<Enum>ВидыЗаказа</Enum>
+			<Enum>КаналыРынка</Enum>
+			<Enum>КатегорииКлиентов</Enum>
+			<Enum>ВидыОбслуживания</Enum>
+			<Enum>МетодыОплаты</Enum>
+			<Enum>СтадииВзаимоотношенийСПокупателями</Enum>
+			<Enum>ФБ_ВидОплаты</Enum>
+			<Enum>ВидыУсловийДоговоровВзаиморасчетов</Enum>
+			<Enum>ТипыКонтактнойИнформации</Enum>
+			<Enum>ТипыВопросовАнкетДляТП</Enum>
+			<Enum>Балмико_РазрезыПланирования</Enum>
+			<Enum>ТипыТрейдМаркетинговыхАкций</Enum>
+			<Enum>СостоянияОбменаДанными</Enum>
+			<Enum>ТипыСетей</Enum>
+			<Enum>Допродажи</Enum>
+			<Enum>СпособыПолученияЗаказаБалмико</Enum>
+			<Enum>Балмико_ВидыТоварногоБонуса</Enum>
+			<Enum>ВидыЗаказов</Enum>
+			<DataProcessor>ОбработкаОшибокНаКлиенте</DataProcessor>
+			<DataProcessor>Служебная</DataProcessor>
+			<DataProcessor>ОтчетВзаиморасчеты</DataProcessor>
+			<DataProcessor>ОтчетПродажиИВозвраты</DataProcessor>
+			<DataProcessor>ОтчетПросроченнаяЗадолженность</DataProcessor>
+			<DataProcessor>ОтчетЗаказаннаяПродукция</DataProcessor>
+			<DataProcessor>ВсеФункции</DataProcessor>
+			<DataProcessor>КонсольЗаданий</DataProcessor>
+			<DataProcessor>ПросмотрЛогов</DataProcessor>
+			<DataProcessor>ПросмотрЗарегистрированныхИзменений</DataProcessor>
+			<DataProcessor>Обязательства</DataProcessor>
+			<InformationRegister>Штрихкоды</InformationRegister>
+			<InformationRegister>ГеоКоординаты</InformationRegister>
+			<InformationRegister>СостоянияРабочегоДня</InformationRegister>
+			<InformationRegister>АктуальныеМаршруты</InformationRegister>
+			<InformationRegister>ПринадлежностьКонтрагентовГруппам</InformationRegister>
+			<InformationRegister>ЦеныНоменклатуры</InformationRegister>
+			<InformationRegister>СостоянияПосещений</InformationRegister>
+			<InformationRegister>ПринадлежностьНоменклатурыГруппам</InformationRegister>
+			<InformationRegister>ОС_Логи</InformationRegister>
+			<InformationRegister>ОС_ПрисоединенныеФайлы</InformationRegister>
+			<InformationRegister>УсловияПоставокПоДоговорамКонтрагентовПоНоменклатуре</InformationRegister>
+			<InformationRegister>ОграчениеОтгрузокВозвратообразущейПродукции</InformationRegister>
+			<InformationRegister>ОС_ДанныеПродажДляМП</InformationRegister>
+			<InformationRegister>ОС_ДанныеВзаиморасчетовДляМП</InformationRegister>
+			<InformationRegister>ОС_ОстаткиТоваров</InformationRegister>
+			<InformationRegister>СоответствиеТорговыхПредставителейТерриториям</InformationRegister>
+			<InformationRegister>ТекущаяПринадлежностьКонтрагентовГруппам</InformationRegister>
+			<InformationRegister>ЗаданияТП</InformationRegister>
+			<InformationRegister>ДокументыДляОбработки</InformationRegister>
+			<InformationRegister>ОС_ПланыПродаж</InformationRegister>
+			<InformationRegister>ЗамерыОпераций</InformationRegister>
+			<InformationRegister>ЗамерыОперацийНастройки</InformationRegister>
+			<InformationRegister>ОсобыеКвантыКратности</InformationRegister>
+			<InformationRegister>ОсобыеКвантыКратностиПоКонтрагентам_Балмико</InformationRegister>
+			<InformationRegister>Балмико_ДанныеПоЗаказамДляМП</InformationRegister>
+			<InformationRegister>Балмико_НоменклатураПроданнаяГрузополучателям</InformationRegister>
+			<InformationRegister>ВыполнениеЗаданийТП</InformationRegister>
+			<InformationRegister>ЗаданияТППоВнеплановымПосещениям</InformationRegister>
+			<InformationRegister>ЗаданияПоАнкетированиюКлиентов</InformationRegister>
+			<InformationRegister>КомментарииПоКонтрагентам</InformationRegister>
+			<InformationRegister>СобытияПоКонтрагентам</InformationRegister>
+			<InformationRegister>ТоварныйБонусКонтрагентов</InformationRegister>
+			<AccumulationRegister>Балмико_ТоварныйБонус</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
